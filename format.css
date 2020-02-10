@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {font-size: 30px}
+
+html {background-color: #DCDCDC}
+
+body {font-family: "Times New Roman", Arial; font-size: 20px}
+
+/* HEADER STYLING */
+.header {
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    line-height: 0.7;
+}
+
+.image {
+    width: 152px;
+    height: 100px;
+}
+
+.logo {
+    display: block;
+    width: auto;
+    height: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+    color: #000080;
+    border-bottom: 10px solid #F37021;
+}
+
+/* MAIN CONTENT (NAVIGATION BAR AND SECTION */
+.page-container {
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.nav {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    width: 170px;
+	height: 100%;
+    border-right: 10px solid #F37021;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000080;
+    font-size: 25px;
+    padding-top: 20px;
+
+}
+
+.nav a:first-child {padding-top: 10px}
+
+.nav a:hover {
+    border-bottom: 5px solid #F37021
+}
+
+.section {
+    flex-grow: 1;
+    margin-left: 180px;
+}
+
+@media (max-width: 600px)
+    {
+        /* Styling for the header */
+        h1 {font-size: 20px;}
+        body {font-size: 15px;}
+        .header {height: 70px; line-height: 0.5;}
+        .image {width: 40px; height: 70px;}
+        .logo {width: auto; height: 65px; padding-top: 2.5px; padding-bottom: 2.5px;}
+        .header-text {border-bottom: none;}
+
+        /* Styling for the main content (navigation bar and section) */
+        .page-container {display:block; width: 100%; margin-top: 70px}
+        .nav,.section {display:block;}
+        .nav {box-sizing: border-box; width: 100%; height: 30px; border: none; background-color: #F37021;}
+        .nav a {display: inline-block; box-sizing: border-box; font-size: 20px; padding: 5px 10px; margin: 0;}
+        .nav a:first-child{padding-top: 5px;}
+        .nav a:hover {background-color: #DCDCDC}
+        .section {flex-grow: unset; margin: 0; margin-top: 30px; width: 100%;}
+    }
+
+
+
