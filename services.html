@@ -17,15 +17,15 @@
 	.where-service, .basics, .plumbing, .heating {display: block; box-sizing: border-box; width: 100%; margin-bottom: 10px;}
 	@media (min-width: 600px) {
 	.where-service {background-image: url(map.png); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-	.where-service .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding-right: 5px; padding-top: 20px; padding-left: 5px;}
+	.where-service .text {box-sizing: border-box; text-align: left; float: left; color: #000000; background-color: #BED2EE; height: 100%; padding-right: 5px; padding-top: 20px; padding-left: 5px;}
 
 	.basics {background-image: url(faucet.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-	.basics .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 30px}
+	.basics .text {box-sizing: border-box; text-align: left; float: right; color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 30px}
 
 	.plumbing {background-image: url(wrenches.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-	.plumbing .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px;padding-top: 60px}
+	.plumbing .text {box-sizing: border-box; text-align: left; float: left; color: #000000; background-color: #BED2EE; height: 100%; padding: 10px;padding-top: 60px}
 	.heating {background-image: url(rough.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-	.heating .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 40px;}
+	.heating .text {box-sizing: border-box; text-align: left; float: right; color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 40px;}
     }
 
     .where-service, .plumbing {background-color: #BED2EE;}
@@ -50,8 +50,8 @@
     <div class = "page-container">
 	    <div class = "nav">
 		    <a href = index.html>Home</a>
-		    <a href = contact.html>Contact</a>
 		    <a href = services.html>Services</a>
+            <a href = contact.html>Contact</a>
         </div>
 
         <div class = "section">
