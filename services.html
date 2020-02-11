@@ -17,7 +17,15 @@
 	.where-service, .basics, .plumbing, .heating {display: block; box-sizing: border-box; width: 100%; margin-bottom: 10px;}
 	@media (min-width: 600px) {
 	.where-service {background-image: url(map.png); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-	.where-service .text {box-sizing: border-box; text-align: center; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; size: 1.5em; background-color: #DCDCDC; height: 100%; padding-right: 5px; padding-top: 20px;}
+	.where-service .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding-right: 5px; padding-top: 20px; padding-left: 5px;}
+
+	.basics {background-image: url(faucet.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+	.basics .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 30px}
+
+	.plumbing {background-image: url(wrenches.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+	.plumbing .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px;padding-top: 60px}
+	.heating {background-image: url(rough.jpg); height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+	.heating .text {box-sizing: border-box; text-align: left; position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); color: #000000; background-color: #BED2EE; height: 100%; padding: 10px; padding-top: 40px;}
     }
 
     .where-service, .plumbing {background-color: #BED2EE;}
@@ -68,15 +76,42 @@
             	</div>
 
                 <div class = "basics">
-                    Whether it’s that faucet that won’t stop leaking or that toilet that won’t flush, we can get it all fixed up for you in a jiff.  There’s no plumbing problem we can't fix, including:
+                	<div class = "text">
+                        <b>Basic Services:</b>
+                    	<ul>
+        			        <li>Clogged drains</li>
+        			        <li>Toilet repair/replacement</li>
+        			        <li>Garbage disposal repair/replacement</li>
+        			        <li>Leak detection</li>
+        			        <li>Water heater service</li>
+        			        <li>Dripping plumbing fixtures</li>
+        		        </ul>
+        		    </div>
                 </div>
 
                 <div class = "plumbing">
-                	From roughing in a new home to the finish work of a remodel, our plumbing services have got you covered.  Here are a few of the most commonly requested:
+                	<div class = "text">
+                        <b>Plumbing Services:</b>
+                    	<ul>
+        			        <li>Appliance hook-ups & installation</li>
+        			        <li>Frozen/burst pipes repair</li>
+        			        <li>Septic & drain line cleaning</li>
+        			        <li>Shower installation</li>
+        		        </ul>
+        		    </div>
                 </div>
 
                 <div class = "heating">
-                	Staying warm in the winter months is a necessity for you and your family.  Our heating services help make that happen, including:
+                	<div class = "text">
+                        <b>Heating Services:</b>
+                    	<ul>
+        			        <li>Oil to gas conversions</li>
+        			        <li>Boiler and furnace replacements</li>
+        			        <li>Warm air heating</li>
+        			        <li>Hot water heating</li>
+        			        <li>Radiant heating and floor warming</li>
+        		        </ul>
+        		    </div>
                 </div>
             </div>
 
