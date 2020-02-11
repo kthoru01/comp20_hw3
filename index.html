@@ -13,8 +13,12 @@
 <link rel="stylesheet" type = "text/css" href="format.css" />
 
 <style type="text/css">
-	.header-text p {font-style: italic;}
-	.reasons {background-color: #F37021}
+	.emergency {display: block; box-sizing: border-box; width: 100%; background-color: #F37021; font-size: 25px; text-align: center; margin-top: 0; text-decoration: none;}
+	.reasons {display: block; box-sizing: border-box; margin-top: 10px;}
+	
+	@media (max-width: 600px) {
+		.emergency {font-size: 20px;}
+	}
 </style>
 </head>
 
@@ -35,19 +39,23 @@
     <div class = "page-container">
 	    <div class = "nav">
 		    <a href = index.html>Home</a>
-		    <a href = contact.html>Contact</a>
 		    <a href = services.html>Services</a>
+		    <a href = contact.html>Contact</a>
         </div>
 
         <div class = "section">
         	<center>
-        	<h4>
+        	<p style = "font-weight: bold; margin-bottom: 0;">
         		Thorup Plumbing & Heating is a family owned and operated business that has provided quality and affordable plumbing service to Cape Cod for over 30 years.  Over that time, we’ve truly seen it all.
-        	</h4>
-        	<p>
+        	</p>
+        	<p style = "font-style: italic; margin-top: 0; line-height: 1.5;">
         	    It’s that experience that truly sets us apart.  If you’re interested in a free service quote, contact us now.
         	</p>
             </center>
+
+            <div class = "emergency">
+        		24/7 EMERGENCY SERVICE CALL (508) 240-7738
+        	</div>
             
         	<div class = "reasons">
         		Why Thorup Plumbing & Heating?
